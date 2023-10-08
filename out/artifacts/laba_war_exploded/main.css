@@ -1,0 +1,109 @@
+body {
+    background-image: url(images/wallpaper2.jpeg);
+    background-size: 100%;
+    font-family: monospace; /*наследование (шрифт)*/
+}
+
+[title = "Gnod here!"] { /*селектор атрибутов*/
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 250%;
+    text-decoration: underline;
+    color: #130229;
+}
+
+.main-table { /*селектор классов*/
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#enter-text {
+    text-align: left; /*каскадирование*/
+    font-size: 200%;
+    color: #A35CFF;
+    background-color: #F3FFE1;
+}
+
+TH.variable:after { /*селектор псевдоэлементов*/
+    content: "🍁";
+}
+
+div input { /*селектор потомков*/
+    color: #050405;
+    border-width: thick;
+    border-style: groove;
+    border-color: #050405;
+    /*font-size: 100%;*/
+}
+
+div p {
+    font-size: 150%;
+}
+
+.not-main-table {
+    font-size: 200%;
+    border-style: groove;
+    border-color: #c4b5c4;
+    text-align: center;
+    color: rgb(78, 200, 200);
+    font-style: normal;
+    width: 100%;
+}
+
+#button {
+    color: black;
+    text-align: center;
+    padding: 1% 2%;
+    margin: 2%;
+    background: white;
+    border: dotted #FFD7D5;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#cleaningbutton {
+    color: black;
+    text-align: center;
+    padding: 1% 2%;
+    margin: 2%;
+    background: rgb(242, 233, 233);
+    border: groove #e7d7d6;
+    cursor: pointer;
+    border-radius: 7px;
+    width: 50px;
+    height: 40px;
+}
+
+#select {
+    font-size: 100%;
+}
+
+#time {
+    color: #FF47A0;
+}
+
+.the_result{
+    font-family: monospace;
+    font-size: 250%;
+    color: #FF47A0;
+}
+.back_button{
+    color: black;
+    text-align: center;
+    padding: 1% 2%;
+    margin: 2%;
+    background: white;
+    border: dotted #FFD7D5;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.check-error {
+    display: none;
+}
+
+.variable > input{
+    cursor: pointer;
+}
