@@ -1,4 +1,6 @@
-package lab2.models;
+package lab2.views;
+
+import lab2.models.Check;
 
 public class AnswerPageGenerator {
     public static String generateAnswerPage(Check check) {

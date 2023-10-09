@@ -1,6 +1,6 @@
 package lab2.servlets;
 
-import lab2.models.AnswerPageGenerator;
+import lab2.views.AnswerPageGenerator;
 import lab2.models.Check;
 import lab2.models.CheckList;
 import lab2.models.Clock;
