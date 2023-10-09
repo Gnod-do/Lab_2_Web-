@@ -5,7 +5,7 @@
   Time: 12:52 AM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page import="lab2.models.TableMaker" %>
+<%@ page import="lab2.views.TableMaker" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
   <head>

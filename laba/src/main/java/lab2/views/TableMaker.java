@@ -1,4 +1,7 @@
-package lab2.models;
+package lab2.views;
+
+import lab2.models.Check;
+import lab2.models.CheckList;
 
 public class TableMaker {
 
