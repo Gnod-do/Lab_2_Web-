@@ -1,5 +1,6 @@
 package lab2.servlets;
 
+import lab2.models.AnswerPageGenerator;
 import lab2.models.Check;
 import lab2.models.CheckList;
 import lab2.models.Clock;
@@ -39,47 +40,7 @@ public class AreaCheckServlet extends HttpServlet {
         writer.close();
     }
     public String answerPage(Check check) {
-        String result = check.isResult() ? "Yes!" : "No!";
-        String answer = "<html>\n" +
-                "<html lang=\"en\">\n" +
-                "<head>\n" +
-                "  <meta charset=\"UTF-8\">\n" +
-                "  <title>answer</title>\n" +
-                "  <link rel=\"stylesheet\" href=\"main.css\">\n" +
-                "</head>\n" +
-                "<table class=\"main-table\" align=\"center\">\n" +
-                "  <th colspan=\"2\">\n" +
-                "    <p title=\"It's me!\" class=\"main-table\">\n" +
-                "      Do Van Dong, P3225, v. 861205\n" +
-                "    </p>\n" +
-                "  </th>\n" +
-                "  <tr>\n" +
-                "    <td>\n" +
-                "    </td>\n" +
-                "    <td>\n" +
-                "    </td>\n" +
-                "  </tr>\n" +
-                "  <tr>\n" +
-                "    <td colspan=\"2\">\n" +
-                "      <div class=\"main-table\">\n" +
-                "<p class='the_result'>" +
-                "<table align=\"center\" class='the_result'>\n" +
-                "    <tr>\n" +
-                "        <th class=\"variable\">X=" + check.getX() + "</th>\n" +
-                "        <th class=\"variable\">Y=" + check.getY() + "</th>\n" +
-                "        <th class=\"variable\">R=" + check.getY() + "</th>\n" +
-                "        <th>Result " + result + "</th>\n" +
-                "    </tr>" + "</p>" + "<form action=\"controllerServlet\">\n" +
-                "<button class=\"back_button\" type=\"submit\">Back</button>\n" +
-                "</form>\n" +
-                "      </div>\n" +
-                "    </td>\n" +
-                "  </tr>\n" +
-                "  <tr>\n" +
-                "  </tr>\n" +
-                "</table>\n" +
-                "</body>\n" +
-                "</html>";
+        String answer = AnswerPageGenerator.generateAnswerPage(check);
         return answer;
     }
     public boolean checkingTheArea(double x, double y, double r) {

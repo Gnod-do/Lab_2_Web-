@@ -102,8 +102,11 @@ div p {
 
 .check-error {
     display: none;
+    collor: white;
+    background-color: #F3FFE1;
 }
 
 .variable > input{
     cursor: pointer;
 }
+

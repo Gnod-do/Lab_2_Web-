@@ -1,0 +1,6 @@
+lab2\models\Check.class
+lab2\servlets\ControllerServlet.class
+lab2\models\Clock.class
+lab2\models\TableMaker.class
+lab2\models\CheckList.class
+lab2\servlets\AreaCheckServlet.class

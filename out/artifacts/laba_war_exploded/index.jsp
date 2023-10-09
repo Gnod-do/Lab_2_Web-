@@ -30,7 +30,7 @@
           <canvas id="canvas"></canvas></div>
       </td>
       <td>
-        <p class="main-table" id="enter-text"></p>
+        <p class="main-table" id="enter-text">Enter values.</p>
       </td>
     </tr>
     <tr>
@@ -63,6 +63,12 @@
         </div>
       </td>
     </tr>
+    <div class="error-message">
+      <% String errorMessage = (String) request.getAttribute("errorMessage");
+        if (errorMessage != null) {
+          out.println("<p class='error'>" + errorMessage + "</p>");
+        } %>
+    </div>
     <tr>
       <td colspan="2">
         <%=TableMaker.createTable(getServletConfig().getServletContext().getAttribute("answerList"))%>
